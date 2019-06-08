@@ -7,9 +7,7 @@ const dbPass = process.env.DB_PASS || '';
 const dbCred =
 	dbUser.length > 0 || dbPass.length > 0 ? `${dbUser}:${dbPass}@` : '';
 
-const dbUrl =
-	// process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
-	'mongodb+srv://write:write@cluster0-elbdk.mongodb.net/shop';
+const dbUrl = 'mongodb+srv://write:write@cluster0-elbdk.mongodb.net/shop';
 
 module.exports = {
 	// used by Store (server side)
@@ -19,7 +17,7 @@ module.exports = {
 	ajaxBaseUrl: `https://shoppers1.herokuapp.com/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: `https://shoppers1-client.herokuapp.com`,
+	storeBaseUrl: '*',
 
 	// used by API
 	adminLoginUrl: '/admin/login',
@@ -41,10 +39,10 @@ module.exports = {
 	},
 
 	// key to sign tokens
-	jwtSecretKey: '-',
+	jwtSecretKey: 'SP69kXFR3znRi7kL8Max2GTB24wOtEQj',
 
 	// key to sign store cookies
-	cookieSecretKey: '-',
+	cookieSecretKey: '8669X9P5yI1DAEthy1chc3M9EncyS7SM',
 
 	// path to uploads
 	categoriesUploadPath: 'public/content/images/categories',
@@ -63,6 +61,4 @@ module.exports = {
 
 	// used by API
 	orderStartNumber: 1000
-
-	// developerMode: true
 };
