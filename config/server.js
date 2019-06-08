@@ -13,13 +13,13 @@ const dbUrl =
 
 module.exports = {
 	// used by Store (server side)
-	apiBaseUrl: `http://shoppers1.herokuapp.com/api/v1`,
+	apiBaseUrl: `https://shoppers1.herokuapp.com/api/v1`,
 
 	// used by Store (server and client side)
-	ajaxBaseUrl: `http://shoppers1.herokuapp.com/ajax`,
+	ajaxBaseUrl: `https://shoppers1.herokuapp.com/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: `http://shoppers1-client.herokuapp.com`,
+	storeBaseUrl: `https://shoppers1-client.herokuapp.com`,
 
 	// used by API
 	adminLoginUrl: '/admin/login',

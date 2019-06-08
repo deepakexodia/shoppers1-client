@@ -2,7 +2,7 @@
 module.exports = {
 	// dashboard UI language
 	language: 'en',
-	apiBaseUrl: 'http://shoppers1.herokuapp.com/api/v1',
-	apiWebSocketUrl: 'ws://shoppers1.herokuapp.com'
+	apiBaseUrl: 'https://shoppers1.herokuapp.com/api/v1',
+	apiWebSocketUrl: 'wss://shoppers1.herokuapp.com'
 	// developerMode: true
 };
