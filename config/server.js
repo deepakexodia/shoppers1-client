@@ -8,7 +8,8 @@ const dbCred =
 	dbUser.length > 0 || dbPass.length > 0 ? `${dbUser}:${dbPass}@` : '';
 
 const dbUrl =
-	process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
+	// process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
+	'mongodb+srv://write:write@cluster0-elbdk.mongodb.net/shop';
 
 module.exports = {
 	// used by Store (server side)
