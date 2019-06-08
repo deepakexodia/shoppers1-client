@@ -17,7 +17,7 @@ module.exports = {
 	ajaxBaseUrl: `https://shoppers1.herokuapp.com/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: '*',
+	storeBaseUrl: 'https://shoppers1-client.herokuapp.com',
 
 	// used by API
 	adminLoginUrl: '/admin/login',
