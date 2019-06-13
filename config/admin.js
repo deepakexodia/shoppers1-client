@@ -2,5 +2,5 @@
 module.exports = {
 	// dashboard UI language
 	language: 'en',
-	apiBaseUrl: 'https://shoppers1.herokuapp.com/api/v1'
+	apiBaseUrl: 'https://shoppers1-client.herokuapp.com/api/v1'
 };

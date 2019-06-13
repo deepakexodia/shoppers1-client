@@ -1,0 +1,20 @@
+server {
+    listen       443;
+    server_name   shoppers1-client.herokuapp.com;
+
+    location / {
+        proxy_pass http://localhost:3000;
+    }
+
+    location /api {
+    		proxy_pass http://localhost:3001;
+    }
+
+    location /ajax {
+				proxy_pass http://localhost:3001;
+    }
+
+    location /admin {
+				proxy_pass http://localhost:3000;
+		 }
+}

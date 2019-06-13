@@ -11,10 +11,10 @@ const dbUrl = 'mongodb+srv://write:write@cluster0-elbdk.mongodb.net/shop';
 
 module.exports = {
 	// used by Store (server side)
-	apiBaseUrl: `https://shoppers1.herokuapp.com/api/v1`,
+	apiBaseUrl: `https://shoppers1-client.herokuapp.com/api/v1`,
 
 	// used by Store (server and client side)
-	ajaxBaseUrl: `https://shoppers1.herokuapp.com/ajax`,
+	ajaxBaseUrl: `https://shoppers1-client.herokuapp.com/ajax`,
 
 	// Access-Control-Allow-Origin
 	storeBaseUrl: 'https://shoppers1-client.herokuapp.com',
@@ -22,8 +22,8 @@ module.exports = {
 	// used by API
 	adminLoginUrl: '/admin/login',
 
-	apiListenPort: process.env.PORT || 3001,
-	storeListenPort: process.env.PORT || 3000,
+	apiListenPort: 3001,
+	storeListenPort: 3000,
 
 	// used by API
 	mongodbServerUrl: dbUrl,
