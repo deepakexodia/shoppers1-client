@@ -2,5 +2,5 @@
 module.exports = {
 	// store UI language
 	language: 'en',
-	ajaxBaseUrl: 'https://shoppers1-client.herokuapp.com/ajax'
+	ajaxBaseUrl: 'https://haproxy-shoppers.herokuapp.com/ajax'
 };
