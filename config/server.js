@@ -22,7 +22,7 @@ module.exports = {
 	// used by API
 	adminLoginUrl: '/admin/login',
 
-	apiListenPort: 3001,
+	apiListenPort: process.env.PORT || 3001,
 	storeListenPort: process.env.PORT || 3000,
 
 	// used by API
